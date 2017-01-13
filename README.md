@@ -7,11 +7,11 @@
 
 Install react-native with node from cmd. Command:
 
-~~~~ npm install -g react-native-cli ```
+``` npm install -g react-native-cli ```
 
 If npm is not recognised just add
 
-;C:\\Program Files\\nodejs\\
+ ``` ;C:\\Program Files\\nodejs\\ ```
 
 To the end of your Path variable on the “User variable” section of the Environment Variables on the System Properties.
 
@@ -20,7 +20,7 @@ Create a projects folder like /reactnative where do you like ( es: *C:\\Users\\A
 
 Go into the /reactnative folder and generate a new project called with react from cmd, command:
 
-react-native init albums
+react-native init albums 
 
 Open Android Studio and select *open a new existing Android studio project  *and select the /android folder into the “albums” project created above (example: *C:\\Users\\Andrea\\Documents\\reactnative\\albums\\android )*
 
