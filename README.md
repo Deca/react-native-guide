@@ -34,9 +34,11 @@
 <div></div>
 <div>To complete the react-native installation need to add a windows environment user variables (if not already present) about jdk installation path and a new path in the variable "PATH":</div>
 <div><b> </b></div>
+<div></div>
 <div><b>new variable:</b></div>
 <div>name: JAVA_HOME</div>
 <div>value:  C:\Program Files\Java\jdk1.8.0_111</div>
+<div></div>
 <div></div>
 <div><b>path to add</b></div>
 <div>;C:\Users\Andrea\AppData\Local\Android\sdk\platform-tools</div>
@@ -45,12 +47,13 @@
 <div></div>
 <div>
 <div>
-<div>react-native run-android</div>
+<div><em>react-native run-android</em></div>
 </div>
 </div>
 <div></div>
 <div>This will start the react-native package (on antoher window), it will take care of take all the javascript code and compress into a single javascript file and make it available to the device.</div>
 <div>In the original window the application will build for android and it will be automatically installed and opened on the device.</div>
+<div></div>
 <div></div>
 <div><b>issue about slow and unresponsive android virtual emulator</b></div>
 <div>A good alternative to the original emulator is the free version of <a href="https://www.genymotion.com/fun-zone/">genymotion emulator</a> , it's faster and should work also on AMD machines.</div>
