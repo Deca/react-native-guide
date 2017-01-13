@@ -7,7 +7,7 @@
 
 Install react-native with node from cmd. Command:
 
-npm install -g react-native-cli
+~~~~ npm install -g react-native-cli ```
 
 If npm is not recognised just add
 
