@@ -1,82 +1,66 @@
-<div>**FIRST SETUP**</div>
+**FIRST SETUP**
 
-*   Install java jdk
-*   Install node.js
-*   Install Python 2.x
-*   Install Android studio
+-   Install java jdk
+-   Install node.js
+-   Install Python 2.x
+-   Install Android studio
 
-<div>Install react-native with node from cmd. Command:</div>
+Install react-native with node from cmd. Command:
 
-<div>
+npm install -g react-native-cli
 
-<div>npm install -g react-native-cli</div>
+If npm is not recognised just add
 
-</div>
+;C:\\Program Files\\nodejs\\
 
-<div>If npm is not recognised just add</div>
+To the end of your Path variable on the “User variable” section of the Environment Variables on the System Properties.
 
-<div>
+Create a projects folder like /reactnative where do you like ( es: *C:\\Users\\Andrea\\Documents\\reactnative )*
 
-<div>
+* *
 
-<div>;C:\Program Files\nodejs\</div>
+Go into the /reactnative folder and generate a new project called with react from cmd, command:
 
-</div>
+react-native init albums
 
-</div>
+Open Android Studio and select *open a new existing Android studio project  *and select the /android folder into the “albums” project created above (example: *C:\\Users\\Andrea\\Documents\\reactnative\\albums\\android )*
 
-<div>To the end of your Path variable on the "User variable" section of the Environment Variables on the System Properties.</div>
+* *
 
-<div>Create a projects folder like /reactnative where do you like ( es: _C:\Users\Andrea\Documents\reactnative )_</div>
+Android studio could output an error about “missing platforms”, click on the link in the error and install all the missing sdk
 
-<div>Go into the /reactnative folder and generate a new project called with react from cmd, command:</div>
+Next go in the AVD manager and create an android emulator for debug  (note it work only with Intel CPU, with amd you need to debug on a real device connected with usb debug mode)
 
-<div>
+At today react-native use API 23 Marshmallow, select them (and eventually dowload if needed)
 
-<div>react-native init albums</div>
+To complete the react-native installation need to add a windows environment user variables (if not already present) about jdk installation path and a new path in the variable “PATH”:
 
-</div>
+** **
 
-<div>Open Android Studio and select _open a new existing Android studio project  _and select the /android folder into the "albums" project created above (example: _C:\Users\Andrea\Documents\reactnative\albums\android )_</div>
+**new variable:**
 
-<div>Android studio could output an error about "missing platforms", click on the link in the error and install all the missing sdk</div>
+name: JAVA\_HOME
 
-<div>Next go in the AVD manager and create an android emulator for debug  (note it work only with Intel CPU, with amd you need to debug on a real device connected with usb debug mode)</div>
+value:  C:\\Program Files\\Java\\jdk1.8.0\_111
 
-<div>At today react-native use API 23 Marshmallow, select them (and eventually dowload if needed)</div>
+**path to add**
 
-<div>To complete the react-native installation need to add a windows environment user variables (if not already present) about jdk installation path and a new path in the variable "PATH":</div>
+;C:\\Users\\Andrea\\AppData\\Local\\Android\\sdk\\platform-tools
 
-<div>**new variable:**</div>
+Then close and reopen cmd to have the modification take effect, go into /reactnative/albums and run the command:
 
-<div>name: JAVA_HOME</div>
+*react-native run-android*
 
-<div>value:  C:\Program Files\Java\jdk1.8.0_111</div>
+This will start the react-native package (on antoher window), it will take care of take all the javascript code and compress into a single javascript file and make it available to the device.
 
-<div>**path to add**</div>
+In the original window the application will build for android and it will be automatically installed and opened on the device.
 
-<div>;C:\Users\Andrea\AppData\Local\Android\sdk\platform-tools</div>
+**issue about slow and unresponsive android virtual emulator**
 
-<div>Then close and reopen cmd to have the modification take effect, go into /reactnative/albums and run the command:</div>
+A good alternative to the original emulator is the free version of [genymotion emulator] , it’s faster and should work also on AMD machines.
+ 
+- install genymotion emulator
+- install genymotion plugin in android studio file->settings->plugin->browse repositories and search for genymotion
+- go into genymotion (standalone) settings and in the ADB panel select "use custom android sdk tools". The path on windows 10 is usually in  C:\Users\Andrea\AppData\Local\Android\sdk
 
-<div>
-
-<div>
-
-<div>_react-native run-android_</div>
-
-</div>
-
-</div>
-
-<div>This will start the react-native package (on antoher window), it will take care of take all the javascript code and compress into a single javascript file and make it available to the device.</div>
-
-<div>In the original window the application will build for android and it will be automatically installed and opened on the device.</div>
-
-<div>**issue about slow and unresponsive android virtual emulator**</div>
-
-<div>A good alternative to the original emulator is the free version of [genymotion emulator](https://www.genymotion.com/fun-zone/) , it's faster and should work also on AMD machines.</div>
-
-*   install genymotion emulator
-*   install genymotion plugin in android studio file->settings->plugin->browse repositories and search for genymotion
-*   go into genymotion (standalone) settings and in the ADB panel select "use custom android sdk tools". The path on windows 10 is usually in  _C:\Users\Andrea\AppData\Local\Android\sdk_
+  [genymotion emulator]: https://www.genymotion.com/fun-zone/
