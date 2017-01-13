@@ -20,7 +20,7 @@ Create a projects folder like /reactnative where do you like ( es: *C:\\Users\\A
 
 Go into the /reactnative folder and generate a new project called with react from cmd, command:
 
-react-native init albums 
+``` react-native init albums  ```
 
 Open Android Studio and select *open a new existing Android studio project  *and select the /android folder into the “albums” project created above (example: *C:\\Users\\Andrea\\Documents\\reactnative\\albums\\android )*
 
@@ -46,7 +46,7 @@ value:  C:\\Program Files\\Java\\jdk1.8.0\_111
 
 Then close and reopen cmd to have the modification take effect, go into /reactnative/albums and run the command:
 
-*react-native run-android*
+``` react-native run-android ```
 
 This will start the react-native package (on antoher window), it will take care of take all the javascript code and compress into a single javascript file and make it available to the device.
 
