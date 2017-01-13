@@ -52,6 +52,7 @@ This will start the react-native package (on antoher window), it will take care 
 
 In the original window the application will build for android and it will be automatically installed and opened on the device.
 
+
 **issue about slow and unresponsive android virtual emulator**
 
 A good alternative to the original emulator is the free version of [genymotion emulator] , it’s faster and should work also on AMD machines.
